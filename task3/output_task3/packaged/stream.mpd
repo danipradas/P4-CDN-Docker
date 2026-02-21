@@ -1,0 +1,27 @@
+<?xml version="1.0" ?>
+<MPD xmlns:cenc="urn:mpeg:cenc:2013" xmlns="urn:mpeg:dash:schema:mpd:2011" profiles="urn:mpeg:dash:profile:isoff-live:2011" minBufferTime="PT32.46S" mediaPresentationDuration="PT1M0.020S" type="static">
+  <!-- Created with Bento4 mp4-dash.py, VERSION=2.0.0-641 -->
+  <Period>
+    <!-- Video -->
+    <AdaptationSet mimeType="video/mp4" segmentAlignment="true" startWithSAP="1" maxWidth="1920" maxHeight="1080">
+      <!-- MPEG Common Encryption -->
+      <ContentProtection schemeIdUri="urn:mpeg:dash:mp4protection:2011" value="cbcs" cenc:default_KID="10000000-0000-0000-0000-000000000001"/>
+      <SegmentTemplate timescale="1000" duration="32460" initialization="$RepresentationID$/init.mp4" media="$RepresentationID$/seg-$Number$.m4s" startNumber="1"/>
+      <Representation id="video/avc1/1" codecs="avc1.64002A" width="1920" height="1080" scanType="progressive" frameRate="50" bandwidth="3868376"/>
+      <Representation id="video/avc1/2" codecs="avc1.640020" width="1280" height="720" scanType="progressive" frameRate="50" bandwidth="1921230"/>
+      <Representation id="video/avc1/3" codecs="avc1.64001F" width="854" height="480" scanType="progressive" frameRate="50" bandwidth="951598"/>
+    </AdaptationSet>
+    <!-- Audio -->
+    <AdaptationSet mimeType="audio/mp4" startWithSAP="1" segmentAlignment="true" lang="es">
+      <!-- MPEG Common Encryption -->
+      <ContentProtection schemeIdUri="urn:mpeg:dash:mp4protection:2011" value="cbcs" cenc:default_KID="10000000-0000-0000-0000-000000000001"/>
+      <SegmentTemplate timescale="1000" duration="32460" initialization="$RepresentationID$/init.mp4" media="$RepresentationID$/seg-$Number$.m4s" startNumber="1"/>
+      <Representation id="audio/es/mp4a.40.2/1" codecs="mp4a.40.2" bandwidth="131380" audioSamplingRate="48000">
+        <AudioChannelConfiguration schemeIdUri="urn:mpeg:mpegB:cicp:ChannelConfiguration" value="2"/>
+      </Representation>
+      <Representation id="audio/es/mp4a.40.2/2" codecs="mp4a.40.2" bandwidth="99505" audioSamplingRate="48000">
+        <AudioChannelConfiguration schemeIdUri="urn:mpeg:mpegB:cicp:ChannelConfiguration" value="2"/>
+      </Representation>
+    </AdaptationSet>
+  </Period>
+</MPD>

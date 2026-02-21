@@ -3,17 +3,6 @@
 CLAUDE.md
 .mcp.json
 
-# Media files (too large for git)
-media/
-*.mp4
-*.mkv
-*.webm
-*.ts
-*.m4s
-*.m3u8
-*.mpd
-*.aac
-*.mp3
 
 
 
