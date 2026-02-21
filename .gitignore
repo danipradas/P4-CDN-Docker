@@ -9,18 +9,12 @@ media/
 *.mkv
 *.webm
 *.ts
+*.m4s
 *.m3u8
 *.mpd
 *.aac
 *.mp3
 
-# OS files
-.DS_Store
-Thumbs.db
-desktop.ini
 
-# Docker
-*.log
 
-# CDN tutorial (separate repo)
-cdn-up-and-running/
+.gitignore
