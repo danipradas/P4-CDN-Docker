@@ -2,7 +2,7 @@
 
 **Course:** Video Equipment & Systems
 
-**Authors:** Soulayman, Daniela, Daniel
+**Authors:** Daniela Quimis, Soulayman Haouari, Daniel Pradas
 
 **Date:** February 2026
 
