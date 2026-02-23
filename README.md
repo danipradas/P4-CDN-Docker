@@ -59,28 +59,10 @@ README.md                       ← This file (main entry point)
     └── README.md               ← Task 5 report
 ```
 
-## How to Reproduce
-
-### Prerequisites
+## Prerequisites
 
 - Docker Desktop (or Docker Engine + CLI)
 - Git
 - A web browser with developer tools
-
-### Quick Start
-
-```bash
-# 1. Build the FFmpeg container
-docker build -t ffmpeg-lab -f dockerfiles/Dockerfile.ffmpeg .
-
-# 2. Run FFmpeg inside the container
-docker run --rm -v "$(pwd)/media:/media" ffmpeg-lab -version
-
-# 3. Build the Bento4 container
-docker build -t bento4-lab -f dockerfiles/Dockerfile.bento4 .
-
-# 4. For the CDN task, clone the tutorial repo separately
-git clone https://github.com/leandromoreira/cdn-up-and-running.git
-```
 
 See each task document for detailed step-by-step instructions.
