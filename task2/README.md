@@ -26,10 +26,10 @@ The iconic goal at the buzzer that let us enter into the 2009 Champions League F
 All steps are automated in [`run_task2.sh`](run_task2.sh). It outputs a log file (`task2_output.log`) alongside all generated files.
 
 ```bash
-bash run_task2.sh
+chmod +x run_task2.sh
+.\run_task2.sh
 ```
-
----
+The rest of this README explains the commands in `run_task2.sh` and the rationale behind them. The script is designed to be run from the `task2/` directory.
 
 ## Preparation — Cut to 1 Minute
 

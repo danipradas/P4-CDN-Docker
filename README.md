@@ -12,11 +12,11 @@ Run virtual containers (Docker) to understand video processing, packaging (HLS/D
 
 | Task | Topic | Document |
 |------|-------|----------|
-| 1 | Environment Setup | [docs/task1-environment-setup.md](docs/task1-environment-setup.md) |
-| 2 | Video Packaging (HLS & DASH) | [docs/task2-video-packaging.md](docs/task2-video-packaging.md) |
-| 3 | DRM with Bento4 | [docs/task3-drm-bento4.md](docs/task3-drm-bento4.md) |
-| 4 | VOD Platform Investigation | [docs/task4-vod-investigation.md](docs/task4-vod-investigation.md) |
-| 5 | CDN Implementation | [docs/task5-cdn-implementation.md](docs/task5-cdn-implementation.md) |
+| 1 | FFmpeg Docker container | [task1/README.md](task1/README.md) |
+| 2 | Video Packaging (HLS & DASH) | [task2/README.md](task2/README.md) |
+| 3 | DRM with Bento4 | [task3/README.md](task3/README.md) |
+| 4 | VOD Platform Investigation | [task4/README.md](task4/README.md) |
+| 5 | CDN Implementation | [task5/README.md](task5/README.md) |
 
 ## Tech Stack
 
