@@ -1,6 +1,6 @@
 # P4 — CDN & Docker Lab Report
 
-**Course:** Video Processing
+**Course:** Video Equipment & Systems
 
 **Authors:** Soulayman, Daniela, Daniel
 
