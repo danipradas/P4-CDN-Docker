@@ -1,7 +1,9 @@
 # P4 — CDN & Docker Lab Report
 
 **Course:** Video Processing
+
 **Authors:** Soulayman, Daniela, Daniel
+
 **Date:** February 2026
 
 ## Objective
@@ -29,22 +31,32 @@ Run virtual containers (Docker) to understand video processing, packaging (HLS/D
 ## Project Structure
 
 ```
-README.md                          ← This file (main entry point)
-docs/
-├── task1-environment-setup.md     ← Docker + FFmpeg container setup
-├── task2-video-packaging.md       ← HLS & DASH packaging
-├── task3-drm-bento4.md            ← Bento4 DRM encryption pipeline
-├── task4-vod-investigation.md     ← VOD platform analysis
-├── task5-cdn-implementation.md    ← CDN tutorial walkthrough
-screenshots/
-├── task1/                         ← Screenshots for Task 1
-├── task2/                         ← Screenshots for Task 2
-├── task3/                         ← Screenshots for Task 3
-├── task4/                         ← Screenshots for Task 4
-├── task5/                         ← Screenshots for Task 5
-dockerfiles/                       ← Dockerfiles for FFmpeg, Bento4, etc.
-media/                             ← Source videos and outputs (not in git)
-scripts/                           ← Automation scripts
+README.md                       ← This file (main entry point)
+├── task1/
+│   ├── Dockerfile              ← FFmpeg Docker image definition
+│   └── README.md               ← Task 1 report
+├── task2/
+│   ├── original_video.mp4      ← Source video
+│   ├── video_1min.mp4          ← 1-minute cut used for packaging
+│   ├── run_task2.sh            ← Packaging script (HLS + DASH)
+│   ├── task2_output.log        ← FFmpeg run logs
+│   ├── part_a/                 ← HLS output (.m3u8 playlist + .m4s segments)
+│   ├── part_b/                 ← DASH output (.mpd manifest + .mkv segments)
+│   └── README.md               ← Task 2 report
+├── task3/
+│   ├── Dockerfile              ← Bento4 Docker image definition
+│   ├── video_1min.mp4          ← Source video for DRM packaging
+│   ├── run_task3.sh            ← DRM pipeline script
+│   ├── task3_output.log        ← Bento4 run logs
+│   ├── output_task3/
+│   │   ├── ladder/             ← Encoded renditions (480p, 720p, 1080p)
+│   │   ├── fragmented/         ← Fragmented MP4s (required before CENC encryption)
+│   │   └── packaged/           ← Final HLS + DASH output with CENC encryption
+│   └── README.md               ← Task 3 report
+├── task4/
+│   └── README.md               ← Task 4 report (browser dev tools)
+└── task5/
+    └── README.md               ← Task 5 report
 ```
 
 ## How to Reproduce

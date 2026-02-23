@@ -94,10 +94,10 @@ Everything below is fully automated in [`run_task3.sh`](run_task3.sh). Instead o
 
 ```bash
 chmod +x run_task3.sh
-bash run_task3.sh
+.\run_task3.sh
 ```
 
-The script handles the entire workflow end-to-end: directory setup, encoding ladder, fragmentation, packaging, and logging. The sections below explain what each part of the script does and why.
+The script handles the entire workflow end-to-end: directory setup, encoding ladder, fragmentation, packaging, and logging. The sections below explain what each part of the script does and why
 
 ---
 
